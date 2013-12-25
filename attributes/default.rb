@@ -2,6 +2,10 @@
 # Apache instrumentation
 #
 
+# Tracelyzer collector settings for /etc/tracelyzer/collector.conf
+default['traceview']['tracelyzer']['collector_port'] = 2222
+default['traceview']['tracelyzer']['collector_host'] = "s2f0.incoming.tracelytics.com"
+
 # Cookbook and template to use for /etc/apache2/mods-available/oboe.conf
 default['traceview']['apache']['cookbook'] = "traceview"
 default['traceview']['apache']['template'] = "etc/apache2/mods-available/oboe.conf.erb"

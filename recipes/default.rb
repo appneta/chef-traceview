@@ -30,3 +30,11 @@ packages.each do |package_name|
         action :install
     end
 end
+
+template "/etc/tracelyzer/collector.conf" do
+  cookbook node['traceview']['apache']['cookbook']
+  source "etc/tracelyzer/"
+  mode "0644"
+  owner "tracelyt"
+  group "root"
+end
