@@ -1,3 +1,4 @@
+name             "traceview"
 maintainer       "AppNeta"
 maintainer_email "jmeickle@appneta.com"
 license          "All rights reserved"
