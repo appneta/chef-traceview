@@ -3,7 +3,7 @@ include_recipe "apt"
 remote_file "/tmp/tracelytics.key" do
     source "https://apt.tracelytics.com/tracelytics-apt-key.pub"
     mode "0644"
-    checksum "b876cb2a74f343803ac21282ebe279b38b0c87fb961332a965c5640abaca3688"
+    checksum "6c560210a2265cba05edcba6629b8e3383db414bab94a8c89d1369ad5b56691e"
 end
 
 execute "add-apt-key" do
