@@ -1,0 +1,4 @@
+<% if @node['traceview']['tracelyzer']['collector_port'] != 2222 %>
+COLLECTOR_PORT=<%= @node['traceview']['tracelyzer']['collector_port'] %>
+<% end %>
+COLLECTOR_HOST=<%= @node['traceview']['tracelyzer']['collector_host'] %>
